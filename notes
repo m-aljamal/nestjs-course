@@ -1,0 +1,30 @@
+to create new module form cli:
+    nest generate module messages
+
+to create new controller from cli:
+    nest generate controller messages/messages --flat   
+                            folder name/call the class messages    -- flat dont create new file 
+
+
+to get the values of the post request in nest:
+
+
+POST /messages/5?validate=true 
+Host: http://localhost:3000
+body {"content":"hi there"}
+
+5 = @Param("id") 
+
+validate=true  = @Query()
+
+host = @Headers()
+
+body: @Body()
+
+
+----- 
+
+validation:
+
+dto => data transfer object
+
